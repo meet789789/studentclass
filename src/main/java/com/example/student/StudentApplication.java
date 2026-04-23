@@ -17,6 +17,7 @@ public class StudentApplication implements CommandLineRunner {
 		stdBean().displayStdDetails();
 	}
 
+	// this bean was created to demonstrate the use of @Bean annotation in Spring Boot. It creates an instance of StudentClass with predefined values and makes it available for dependency injection throughout the application.
 	@Bean
 	public StudentClass stdBean() {
 		return new StudentClass("John Doe", 20, "A");
