@@ -12,6 +12,7 @@ public class StudentApplication implements CommandLineRunner {
 		SpringApplication.run(StudentApplication.class, args);
 	}
 
+	// The run method is overridden from the CommandLineRunner interface. It is executed after the application context is loaded and right before the Spring Boot application starts. In this method, we call the displayStdDetails() method of the StudentClass bean to print the details of the student to the console.
 	@Override
 	public void run(String... args) throws Exception {
 		stdBean().displayStdDetails();
